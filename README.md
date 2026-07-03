@@ -45,4 +45,7 @@ python3 coop_lora_trainer.py -r 16 -alpha 8 -lora_lr 2e-4 -coop_lr 2e-3 -base_lr
 To enable the data augmentation code in data/datamgr_aug.py, replace the import in coop_lora_trainer.py (from data.datamgr to data.datamgr_aug) and also pass -aug as a command‑line argument when running the script.
 
 
-
+```
+#e.g., ISIC
+python3 coop_lora_trainer.py -r 16 -alpha 8 -lora_lr 2e-4 -coop_lr 2e-3 -base_lr 0.001 -dataset ISIC  -n_shot 5 -top_ratio 0.3 -aug
+```
