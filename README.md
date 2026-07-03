@@ -17,5 +17,6 @@ conda install pytorch torchvision -c pytorch
 pip3 install scipy>=1.3.2
 pip3 install tensorboardX>=1.4
 pip3 install h5py>=2.9.0
+pip3 install clip
 ```
 
