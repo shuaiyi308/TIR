@@ -111,7 +111,7 @@ class TIR(nn.Module):
         return x
     
   
-    def forward(self, x, txt_tokens, topk_ratio = 0.7, temper_weight = 0.5, params = None):
+    def forward(self, x, txt_tokens, topk_ratio = 0.3, temper_weight = 0.5, params = None):
         #suppress sum = 5 & amplify sum = 1
 
         txt_tokens = txt_tokens.to(x.dtype)
