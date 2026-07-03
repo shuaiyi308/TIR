@@ -36,7 +36,7 @@ Remember to modify your dataset dir in the 'options/options_coop_lora.py'.
 
 ```
 #e.g., ISIC
-python3 coop_lora_trainer.py -r 16 -alpha 8 -lora_lr 2e-4 -coop_lr 2e-3 -base_lr 0.001 -dataset ISIC  -n_shot 5 -mask_ratio 0.70 
+python3 coop_lora_trainer.py -r 16 -alpha 8 -lora_lr 2e-4 -coop_lr 2e-3 -base_lr 0.001 -dataset ISIC  -n_shot 5 -top_ratio 0.3 
 ```
 
 
