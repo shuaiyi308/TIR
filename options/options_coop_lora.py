@@ -36,9 +36,9 @@ def parse_args(script):
     parser.add_argument('-lora_type', type=str, default='linear')
     # parser.add_argument('-ctx_init', default="a photo of a ", type=str)
 
-    parser.add_argument('-aux_param1', default=0.0, type=float)   #7
-    parser.add_argument('-aux_param2', default=0.0, type=float)  #8
-    parser.add_argument('-pos_rate', default=1.0, type=float)  #8  
+    parser.add_argument('-aux_param1', default=0.0, type=float)   
+    parser.add_argument('-aux_param2', default=0.0, type=float)  
+    parser.add_argument('-pos_rate', default=0.0, type=float)   
     parser.add_argument('-aux_container', default={}, type=dict) 
     parser.add_argument('-beta_a', type=float, default=0.0)
     parser.add_argument('-beta_b', type=float, default=0.0)
