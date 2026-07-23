@@ -329,9 +329,7 @@ class ResidualAttentionBlock(nn.Module):
 
         self.attn = nn.MultiheadAttention(d_model, n_head)
         self.ln_1 = LayerNorm(d_model)
-        #self.ln_1_pos = LayerNorm(d_model)
-        #self.pos_rate = torch.nn.Parameter(torch.ones(1).cuda()*0.1)
-        #self.topk = nn.Parameter(torch.randn(1).cuda())
+
         self.mlp = nn.Sequential(OrderedDict([
             ("c_fc", nn.Linear(d_model, d_model * 4)),
             ("gelu", QuickGELU()),
